@@ -1,4 +1,7 @@
 
+#the 8-puzzle
+#jin kim, 2nd March 2019
+
 from queue import PriorityQueue
 from tabulate import tabulate
 import copy
