@@ -1,0 +1,36 @@
+from queue import PriorityQueue
+from random import shuffle
+import copy
+
+
+##Define the n, start state and goal state
+n = 3
+
+#create a simple list ordered 0 to n*n
+temp_start = [i for i in range(n*n)]
+#shuffle the list
+shuffle(temp_start)
+#then break the list into chunks of n using list comprehension
+start = [temp_start[i*n:(i+1)*n] for i in \
+            range((len(temp_start)+n-1)//n)] 
+
+##Define the PuzzleNode
+class PuzzleNode:
+    def __init__(self,state,fval,gval,parent=None):
+        self.state = state
+        self.fval = fval
+        self.gval = gval
+        #"parent attribute to point to a parent node"
+        self.parent = parent
+        self.pruned = False
+
+    #comparison function based on f cost
+    def __lt__(self,other):
+        return self.fval < other.fval
+
+    # "print out a grid showing the board state"
+    def __str__(self):
+        return str(self.state)
+
+print(start)
+print(goal)
