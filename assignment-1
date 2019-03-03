@@ -32,5 +32,3 @@ class PuzzleNode:
     def __str__(self):
         return str(self.state)
 
-print(start)
-print(goal)
