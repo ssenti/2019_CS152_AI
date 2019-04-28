@@ -16,7 +16,7 @@ n = 3 #number of straight lines
 #test start_states (simulation below)
 start_state = [[_] * b for i in range(b)]
 start_state_2 = [[_, _, _], 
-                 [_, 1, _], 
+                 [_, 1, -1], 
                  [-1, _, 1]]
     
 
