@@ -1,5 +1,5 @@
 #watched and referenced this tutorial to understand the basic concept and logic, and 
-#implementation of MiniMaxAlgorithms: https://www.youtube.com/watch?v=gNhbZUOMl0M (Payne, 2014)
+#implementation of MiniMaxAlgorithms: https://www.youtube.com/watch?v=fInYh90YMJU (Payne, 2014)
 
 #referenced Russell & Novig's textbook to understand the basic concept and logic,
 #implementation of MiniMaxAlgorithms and Alpha-Beta pruning
