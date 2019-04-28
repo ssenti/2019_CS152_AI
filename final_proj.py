@@ -146,7 +146,7 @@ def winCheck_diag(node):
                 return maxsize * int(i[0])
                 break
             
-
+#checking for terminal using the winCheck scearios above
 def terminalTest(node):
     winCheck = [winCheck_row(node), winCheck_col(node), winCheck_diag(node)]
     if set(winCheck) != {0}:
@@ -157,11 +157,12 @@ def terminalTest(node):
     else:
         return 0
 
-#simulating the next "optimal move" for two different states
+#simple simulation for the next "optimal move" for two different states
     
 j = Node(5, 1, 0, 0, start_state_2)
 
 print(MinMaxDecision(j))
 
+a = Node(9, 1, 0, 0, start_state)
 
-j = Node(5, 1, 0, 0, start_state)
+print(MinMaxDecision(a))
