@@ -1,3 +1,6 @@
+
+#the DPLL algorithm
+
 from copy import deepcopy
 
 class Literal:
